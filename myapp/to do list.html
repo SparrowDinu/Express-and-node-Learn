@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>To Do List</title>
+   
+
+    </head>
+    <body>
+        <div id="newtask">
+            <form>
+                <div class="input">
+                    <input type="text" class="form-control" placeholder="Enter task" id="box">
+              <div class="formg">
+            
+            <button id="push" onclick="additem()">ADD</button>
+        </div>
+    </form>
+        </div>
+        <div class="row">
+        <ul id="list"></ul>
+        </div>
+
+        </div>
+       <!-- <script>
+            document.querySelector('#push').onclick()=function(){
+               
+                    document.querySelector('#task').innerHTML+=
+                    `<div class="t1">
+                        <span id=
+                        "taskname">
+                        ${document.querySelector('#newtask').value}
+                        </span>
+                        <button class="delete">Remove</button>
+                        </div>`
+                        var currentask=document.querySelectorAll(".delete")
+                        for(var i=0;i<currentask.length;i++){
+                            currentask[i].onclick=function(){
+                                this.parentNode.remove()
+                            }
+                        }
+                } -->
+
+            
+            
+            
+
+             
+        <script>
+            function additem(){
+                let item=document.getElementById("box")
+                let list=document.getElementById("list")
+                if(item.value !==""){
+                    let make=document.createElement("LI")
+                    make.appendChild(document.createTextNode(item.value))
+                    list.appendChild(make)
+                    item.value=""
+                    make.onclick=function(){
+                        this.parentNode.removeChild(this)
+                    }}
+                    else{
+                        alert("enter text")
+                    }
+                }
+            
+        </script>
+
+
+
+
+
+
+
+        
+    </body>
+
+  
+</html>

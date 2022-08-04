@@ -1,0 +1,16 @@
+Request URL: https://www.flipkart.com/
+Request Method: GET
+
+https://2.rome.api.flipkart.com/api/1/fdp
+Request Method: POST
+
+Request URL: https://collector-pxgnttli3a.px-cloud.net/api/v2/collector
+Request Method: POST
+
+Request URL: https://www.instagram.com/logging/falco
+Request Method: POST
+
+fb edit 
+{"data":{"story_edit":{"story":{......}
+
+PUT /new.html HTTP/1.1

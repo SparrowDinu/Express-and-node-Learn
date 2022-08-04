@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+<head>	
+    <title>To do list</title>
+</head>
+
+<body>
+	
+		<h1 >To do list </h1>
+		<form >
+		    <input type="text" placeholder="Enter the text"id="box" >
+            <input type="button"value="add" onclick="additem()" />
+			
+				
+		</form>
+		</div>
+		<div class="row">
+			<ul id="listitem">
+			</ul>
+		</div>
+
+   	<script >
+        
+function additem() {
+let item = document.getElementById("box");
+let listitem = document.getElementById("listitem");
+if(item.value != ""){
+
+	let makeli = document.createElement("LI");
+	makeli.appendChild(document.createTextNode(item.value));
+
+	
+	listitem.appendChild(makeli);
+
+    let button=document.createElement("button")
+    let text=document.createTextNode("remove")
+    button.appendChild(text)
+    item.value=""
+	makeli.onclick = function(){
+		this.parentNode.removeChild(this);
+	}
+    makeli.appendChild(button)
+	let para=document.createElement("p")
+	para.textContent="DInu"
+	document.body.appendChild(para)
+}
+else{
+
+	alert("Need To Enter The Text");
+}
+
+}
+
+    </script>
+</body>
+
+</html>
